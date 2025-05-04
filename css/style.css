@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Tinos', sans-serif;
+  --third-family: 'Raleway', sans-serif;
+}
+/* ======= COMMON CSS START ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+}
+.btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+  color: #fff;
+  background: #ff8a00;
+  border-radius: 163px;
+  padding: 17px 62px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.btn:hover {
+  background: #4caf50;
+  color: #fff;
+}
+.btn-primary {
+  background-color: #4caf50;
+}
+.btn-primary:hover {
+  background-color: #ff8a00;
+}
+/* ======= Common CSS END =======  */
+/* ======= HEADER CSS START ======= */
+header {
+  width: 100%;
+  /* height: 80px; */
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+header .navbar-nav {
+  display: flex;
+  gap: 45px;
+}
+header .navbar-nav .nav-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: #311f09;
+}
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link.active {
+  color: #ff8a00;
+}
+#navbarSupportedContent .cartIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: #311f09;
+  background-color: #d0ccc730;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#navbarSupportedContent .cartIcon:hover {
+  background-color: #ff8a00;
+  color: #fff;
+}
+
+#navbarSupportedContent .loginBtn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  background: #3fa72f;
+  border-radius: 133px;
+  padding: 15px 35px;
+  transition: all 0.3s ease-in-out;
+}
+#navbarSupportedContent .loginBtn:hover {
+  background: #ff8a00;
+  color: #fff;
+}
+/* ======== HEADER CSS END =======  */
+/* ======== HERO CSS START =======  */
+.heroSection {
+  width: 100%;
+  height: 100vh;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection .heroCnt span {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  background: #ff880029;
+  color: #ff8a00;
+  border-radius: 126px;
+  padding: 10px 34px;
+}
+.heroSection .heroCnt h1 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: #311f09;
+  margin: 22px 0 30px 0;
+}
+.heroSection .heroCnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #5c4529;
+}
+.heroSection .heroCnt .btns {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+/* //////// */
+[data-aos='heroImg'] {
+  transform: rotate(180deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+/* ========== HERO CSS END =======  */
+/* ======== WELCOME CSS START =======  */
+.welcomeSection {
+  width: 100%;
+  height: 100vh;
+  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3fc66e1e;
+}
+.welcomeSection .welcomeCnt h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: #311f09;
+}
+.welcomeSection .welcomeCnt h1 span {
+  color: #ff8a00;
+}
+.welcomeSection .welcomeCnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #5c4529;
+  margin: 60px 0 100px 0;
+}

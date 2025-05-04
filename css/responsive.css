@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .heroSection {
+    margin-top: 30px;
+  }
+  .heroSection .heroCnt span {
+    padding: 10px 34px;
+    font-size: 12px;
+  }
+  .heroSection .heroCnt h1 {
+    font-size: 60px;
+    margin: 15px 0;
+  }
+  .heroSection .heroCnt p {
+    font-size: 12px;
+  }
+  .heroSection .heroCnt .btns {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  /* ===== === HERO CSS END =======  * */
+  /* ======== WELCOME CSS START =======  */
+  .welcomeSection .welcomeCnt h1 {
+    font-size: 55px;
+    line-height: 115%;
+    margin-top: 50px;
+  }
+  .welcomeSection .welcomeCnt p {
+    font-size: 12px;
+    margin: 20px 0 50px 0;
+  }
+}
