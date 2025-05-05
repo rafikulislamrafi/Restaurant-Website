@@ -61,11 +61,15 @@ body {
 /* ======= HEADER CSS START ======= */
 header {
   width: 100%;
-  /* height: 80px; */
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
+/* .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+} */
 header .navbar-nav {
   display: flex;
   gap: 45px;
@@ -112,6 +116,8 @@ header .navbar-nav .nav-link.active {
 }
 /* ======== HEADER CSS END =======  */
 /* ======== HERO CSS START =======  */
+
+/* ===== GSAP ======= * */
 .heroSection {
   width: 100%;
   height: 100vh;
@@ -163,6 +169,28 @@ header .navbar-nav .nav-link.active {
 }
 /* ========== HERO CSS END =======  */
 /* ======== WELCOME CSS START =======  */
+#move {
+  background-color: #d8ff04;
+  padding: 2vw 0;
+  display: flex;
+  overflow: hidden;
+}
+#move .marque {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  transform: translateX(-100%);
+}
+#move .marque h1 {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 4vw;
+  color: #311f09;
+  text-transform: uppercase;
+}
+/* marque end */
 .welcomeSection {
   width: 100%;
   height: 100vh;

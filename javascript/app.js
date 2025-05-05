@@ -1,4 +1,3 @@
-
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -15,4 +14,33 @@ AOS.init({
   easing: 'ease', // default easing for AOS animations
   once: true, // whether animation should happen only once - while scrolling down
   mirror: true, // whether elements should animate out while scrolling past them
+});
+// Initialize AOS
+AOS.refresh();
+// Initialize GSAP
+gsap.from('.navbarContainer', {
+  y: '-50',
+  duration: 0.8,
+  opacity: 0,
+  ease: 'power2.inOut',
+  stagger: 1,
+});
+
+
+window.addEventListener('wheel', function (dets) {
+  if (dets.deltaY > 0) {
+    gsap.to('.marque', {
+      duration: 6,
+      x: '-200%',
+      ease: 'none',
+      repeat: -1,
+    });
+  } else {
+    gsap.to('.marque', {
+      duration: 6,
+      x: '0%',
+      ease: 'none',
+      repeat: -1,
+    });
+  }
 });
