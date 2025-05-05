@@ -26,7 +26,6 @@ gsap.from('.navbarContainer', {
   stagger: 1,
 });
 
-
 window.addEventListener('wheel', function (dets) {
   if (dets.deltaY > 0) {
     gsap.to('.marque', {
@@ -35,7 +34,7 @@ window.addEventListener('wheel', function (dets) {
       ease: 'none',
       repeat: -1,
     });
-  } else {
+  }else {
     gsap.to('.marque', {
       duration: 6,
       x: '0%',
