@@ -40,16 +40,19 @@
   }
   .popularMenuSection .popularMenuCnt h1 {
     font-size: 38px;
+    margin-bottom: 30px;
   }
   .popularMenuSection .popularNav {
     overflow: hidden;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    /* gap: 20px; */
   }
   .popularMenuSection .popularNav a {
     font-size: 12px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+
   }
   .popularMenuSection .menu-card {
     margin: 30px 0 60px 0;
@@ -60,13 +63,16 @@
     padding: 8px;
   }
   .popularMenuSection .popularMenuCard .popularMenuCardCnt h1 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
     line-height: 100%;
     margin-bottom: 8px;
   }
   .popularMenuSection .popularMenuCard .popularMenuCardCnt .starIcon {
     color: #ff8a00;
     font-size: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .popularMenuSection .popularMenuCard .popularMenuCardCnt p {
     font-size: 12px;
