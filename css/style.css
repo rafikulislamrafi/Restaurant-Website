@@ -32,6 +32,7 @@ span {
 }
 body {
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 .btn {
   font-family: var(--font-family);
@@ -59,17 +60,57 @@ body {
 }
 /* ======= Common CSS END =======  */
 /* ======= HEADER CSS START ======= */
+.navbarContainer button {
+  background: transparent;
+  border: none;
+  color: #311f09;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 200%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.navbarContainer button:hover {
+  color: #ff8a00;
+}
+.navbar-toggler:focus {
+  outline: none;
+  color: #ff8a00;
+}
+.navbar-toggler:checked {
+  outline: none;
+  color: #ff8a00;
+}
+.navbarContainer button:focus {
+  outline: none;
+  color: #ff8a00;
+  border: none;
+  background: transparent;
+}
+.cartIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: #311f09;
+  background-color: #d0ccc730;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.cartIcon:hover {
+  background-color: #ff8a00;
+  color: #fff;
+}
+/* ///////////// */
 header {
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-/* .navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-} */
 header .navbar-nav {
   display: flex;
   gap: 45px;
@@ -350,4 +391,123 @@ header .navbar-nav .nav-link.active {
   background: #4caf50;
   color: #fff;
 }
+
+/* pagination */
+
+.popularMenuSection .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 88px;
+}
+.popularMenuSection .pagination a {
+  border-radius: 15px;
+  background: #ff880025;
+  /* padding: 10px 24px; */
+  padding: 0.521vw 1.25vw;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 200%;
+  color: #ff8a00;
+  transition: all 0.3s ease-in-out;
+}
+.popularMenuSection .pagination a:hover {
+  background: #311f09;
+  color: #fff;
+}
+.popularMenuSection .pagination span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  color: #b7a28b;
+  /* font-size: 25px; */
+  font-size: calc(0.8vw + 15px); /* Adjust values as needed */
+}
+.popularMenuSection .pagination .paginationIcon {
+  background: #311f09;
+  color: #fff;
+}
+.popularMenuSection .pagination .paginationIcon:hover {
+  background: #ff8a00;
+  color: #fff;
+}
+.popularMenuSection .pagination .paginationIcon:hover span {
+  color: #fff;
+}
+/* pagination end*/
 /* =========== Our popular menu CSS END =======  */
+/* ======= RESERVE SECTION START ======= */
+.reserveSection {
+  padding: 85px 0 70px 0;
+  background: #fff4e771;
+}
+.reserveSection .reserveCnt {
+  padding-left: 40px;
+}
+.reserveSection .reserveCnt h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  color: #311f09;
+}
+.reserveSection .reserveCnt h1 span {
+  color: #ff8a00;
+}
+.reserveSection .reserveCnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #5c4529;
+  margin: 50px 0 100px 0;
+}
+/* ======= RESERVE SECTION END ======= */
+/* ======= OUR GREATEST CHEF SECTION START ======= */
+.greatestChefSection {
+  padding: 170px 0 270px 0;
+}
+.greatestChefSection .greatestChefCardImg {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  rotate: 4deg;
+}
+.greatestChefSection .greatestChefCardImg:hover {
+  transform: scale(1.1);
+  rotate: 0deg;
+}
+.greatestChefSection .greatestChefCardCnt {
+  padding-right: 50px;
+}
+.greatestChefSection .greatestChefCnt h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 200%;
+  color: #311f09;
+  margin-bottom: 130px;
+}
+.greatestChefSection .greatestChefCardCnt h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 200%;
+  color: #311f09;
+  margin: 30px 0 20px 0;
+}
+.greatestChefSection .greatestChefCardCnt span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  color: #a08d76;
+}
+.greatestChefSection .greatestChefBtn {
+  margin-top: 150px;
+}
+
+/* ======= OUR GREATEST CHEF SECTION END ======= */

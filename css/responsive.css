@@ -1,4 +1,54 @@
 @media (max-width: 767px) {
+  header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .navbarContainer button img{
+    width: 30px;
+    height: 30px;
+  }
+  header .navbar-nav {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: center;
+    border-radius: 0px;
+  }
+  header .navbar-nav .nav-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: #311f09;
+  }
+  header .navbar-nav .nav-link:hover,
+  header .navbar-nav .nav-link.active {
+    color: #ff8a00;
+  }
+  #navbarSupportedContent .cartIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: #311f09;
+    background-color: #d0ccc730;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  #navbarSupportedContent .cartIcon:hover {
+    background-color: #ff8a00;
+    color: #fff;
+  }
+  #navbarSupportedContent .loginBtn {
+    margin-bottom: 10px;
+  }
+  #navbarSupportedContent .loginBtn:hover {
+    background: #ff8a00;
+    color: #fff;
+  }
+  /* ========== HERO CSS START =======   */
   .btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -52,7 +102,6 @@
     /* padding: 10px 20px; */
     display: flex;
     justify-content: space-between;
-
   }
   .popularMenuSection .menu-card {
     margin: 30px 0 60px 0;
@@ -101,5 +150,77 @@
     border-radius: 20px;
     padding: 11px 10px;
   }
+  /* pagination */
+  .popularMenuSection .pagination {
+    gap: 2vw;
+    margin-top: 20px;
+  }
+  .popularMenuSection .pagination a {
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .popularMenuSection .pagination span {
+    display: none;
+  }
+  .popularMenuSection .pagination .paginationIcon {
+    background: #311f09;
+    color: #fff;
+  }
+
+  /* pagination end*/
   /* =========== Our popular menu CSS END =======  */
+  /* ======= RESERVE SECTION START ======= */
+  .reserveSection {
+    padding: 60px 0 32px 0;
+    background: #fff4e771;
+  }
+  .reserveSection .reserveCnt {
+    padding-left: 20px;
+  }
+  .reserveSection .reserveCnt h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 115%;
+    color: #311f09;
+  }
+  .reserveSection .reserveCnt h1 span {
+    color: #ff8a00;
+  }
+  .reserveSection .reserveCnt p {
+    font-size: 12px;
+    margin: 32px 0 40px 0;
+  }
+  .reserveSection .reserveCnt a {
+    margin-bottom: 15px;
+  }
+  /* ======= RESERVE SECTION END ======= */
+  /* ======= OUR GREATEST CHEF SECTION START ======= */
+  .greatestChefSection {
+    padding: 50px 0 40px 0;
+  }
+  .greatestChefSection .greatestChefCardCnt {
+    padding-right: 0;
+  }
+  .greatestChefSection .greatestChefCnt h1 {
+    font-size: 40px;
+    line-height: 135%;
+    margin-bottom: 50px;
+  }
+  .greatestChefSection .greatestChefCardCnt h1 {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px 0 5px 0;
+  }
+  .greatestChefSection .greatestChefCardCnt span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #a08d76;
+  }
+  .greatestChefSection .greatestChefBtn {
+    margin-top: 0;
+  }
+
+  /* ======= OUR GREATEST CHEF SECTION END ======= */
 }

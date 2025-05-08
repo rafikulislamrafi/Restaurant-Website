@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/boxicons.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
 </head>
@@ -19,14 +19,20 @@
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg  justify-content-center align-items-center">
-        <div class="container-fluid navbarContainer">
+        <div  class="container w-100 d-flex navbarContainer">
           <a class="navbar-brand" href="./index.html">
             <img src="./img/Logo Delizioso.png" alt="">
           </a>
+          <div class="d-flex gap-1 d-lg-none d-md-none d-sm-none">
+            <a class="cartIcon" href="">
+              <i class="bi bi-cart2"></i>
+            </a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class=""><i class='bx bxl-slack'></i></span> -->
+            <span> <img src="./img/Home.png" alt=""></span>
           </button>
           <div class="justify-content-center align-items-center collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
@@ -50,7 +56,7 @@
               </li>
             </ul>
             <div class="d-flex gap-3">
-              <a class="cartIcon" href="">
+              <a class="cartIcon d-none d-lg-block d-md-block d-sm-block" href="">
                 <i class="bi bi-cart2"></i>
               </a>
               <a class="loginBtn" href="">Log in</a>
@@ -83,7 +89,7 @@
     </section>
     <!-- ======= HERO SECTION END ======= -->
     <!-- ====== Marquee ======  -->
-    <section class="marqueeSection d-none d-lg-block d-md-block d-sm-block">
+    <section class="marqueeSection  d-lg-block d-md-block d-sm-block">
       <div id="move">
         <div class="marque">
           <h1>Welcome to delizioso</h1>
@@ -108,7 +114,6 @@
     <!-- ====== Marquee ====== End -->
     <!-- ======= WELCOME SECTION START ======= -->
     <section class="welcomeSection">
-
       <div class="container  justify-content-center align-items-center">
         <div class="row d-flex justify-content-center align-items-center">
           <div data-aos="heroImg" class=" order-4 order-lg-2 welcomeImg col-lg-6 col-md-6 col-sm-12 text-start">
@@ -143,7 +148,7 @@
         </div>
         <div class="menu-card ">
           <div class="row justify-content-between g-4">
-            <div  data-aos="fade-up" data-aos-delay="400"  class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="400" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Spaghetti.png" alt="">
@@ -167,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <div  data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Gnocchi.png" alt="">
@@ -191,7 +196,7 @@
                 </div>
               </div>
             </div>
-            <div  data-aos="fade-up" data-aos-delay="800" class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="800" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Rovioli.png" alt="">
@@ -215,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div  data-aos="fade-up" data-aos-delay="400" class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="400" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Penne Alla Vodak.png" alt="">
@@ -239,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div  data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Risoto.png" alt="">
@@ -263,7 +268,7 @@
                 </div>
               </div>
             </div>
-            <div  data-aos="fade-up" data-aos-delay="800" class="col-lg-4 col-md-4 col-6">
+            <div data-aos="fade-up" data-aos-delay="800" class="col-lg-4 col-md-4 col-6">
               <div class="popularMenuCard ">
                 <div class="popularMenuCardImg">
                   <img class="img-fluid" src="./img/Splitza Signature.png" alt="">
@@ -289,9 +294,111 @@
             </div>
           </div>
         </div>
+        <!-- ===== Pagination ====== -->
+        <div data-aos="fade-up" class="pagination d-flex justify-content-center align-items-center">
+          <a class="paginationIcon" href="#">
+            <i class=" fa-solid fa-arrow-left"></i>
+          </a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <span>...</span>
+          <a class="paginationIcon" href="#">
+            <i class=" fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <!-- ===== Pagination End ====== -->
       </div>
     </section>
     <!-- ======= POPULAR MENU SECTION END ======= -->
+    <!-- ======= RESERVE SECTION START ======= -->
+    <section class="reserveSection">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div data-aos="heroImg" class="reserveImg order-lg-first order-4 col-lg-6 col-md-6 col-sm-12 ">
+            <img src="./img/Reserv .png" alt="Delicious Food" class="img-fluid ">
+          </div>
+          <div data-aos="fade-up" class="reserveCnt order-lg-last order-1 col-lg-6 col-md-6 col-sm-12 text-start">
+            <h1>Let's reserve <br> <span>a table</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue
+              nibh nulla
+              malesuada ultricies nec quam</p>
+            <a class="btn" href="">Reservation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= RESERVE SECTION END ======= -->
+    <!-- ======= OUR GREATEST CHEF SECTION START ======= -->
+    <section class="greatestChefSection">
+      <div class="container">
+        <div data-aos="fade-up" class="greatestChefCnt col-lg-12 col-md-12 col-sm-12 text-center ">
+          <h1>Our greatest chef</h1>
+        </div>
+        <div class="row d-flex justify-content-between g-4">
+          <div data-aos="fade-up" data-aos-delay="400" class="col-lg-4 col-md-4 col-6">
+            <div class="greatestChefCard  justify-content-center align-items-center">
+              <div class="greatestChefCardImg">
+                <img class="img-fluid " src="./img/Betran Komar.png" alt="">
+              </div>
+              <div class="greatestChefCardCnt text-center">
+                <h1>Betran Komar</h1>
+                <span>
+                  Head chef
+                </span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="600" class="col-lg-4 col-md-4 col-6">
+            <div class="greatestChefCard  justify-content-center align-items-center">
+              <div class="greatestChefCardImg">
+                <img class="img-fluid " src="./img/Ferry Sauwi.png" alt="">
+              </div>
+              <div class="greatestChefCardCnt text-center">
+                <h1>Ferry Sauwi</h1>
+                <span>
+                  Chef
+                </span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="800" class="col-lg-4 col-md-4 col-6">
+            <div class="greatestChefCard  justify-content-center align-items-center">
+              <div class="greatestChefCardImg">
+                <img class="img-fluid " src="./img/Iswan Dracho.png" alt="">
+              </div>
+              <div class="greatestChefCardCnt text-center ">
+                <h1>Iswan Dracho</h1>
+                <span>
+                  Chef
+                </span>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-4 col-md-4 col-6 d-lg-none d-md-block d-block">
+            <div class="greatestChefCard  justify-content-center align-items-center">
+              <div class="greatestChefCardImg">
+                <img class="img-fluid " src="./img/Betran Komar.png" alt="">
+              </div>
+              <div class="greatestChefCardCnt text-center">
+                <h1>Betran Komar</h1>
+                <span>
+                  Head chef
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div data-aos="fade-up" class="greatestChefBtn col-lg-12 col-md-12 d-lg-block d-none text-center ">
+            <a class="btn" href="">See all chef</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= OUR GREATEST CHEF SECTION END ======= -->
   </main>
   <footer>
     <!-- <p>&copy; 2023 Delizioso. All rights reserved.</p> -->
