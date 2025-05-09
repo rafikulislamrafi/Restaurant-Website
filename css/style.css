@@ -511,3 +511,154 @@ header .navbar-nav .nav-link.active {
 }
 
 /* ======= OUR GREATEST CHEF SECTION END ======= */
+/* ======= OPEN TIME SECTION START ======= */
+.openTimeSection {
+  padding: 38px 0 238px 0;
+}
+.openTimeSection .opentimeBg {
+  background-image: url(../img/we\ are\ open\ from.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.openTimeSection .opentimeBg .opentimeCnt {
+  padding: 26px 0 80px 0;
+}
+.openTimeSection .opentimeBg .opentimeCnt h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 200%;
+  color: #fff;
+}
+.openTimeSection .opentimeBg .opentimeCnt h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 200%;
+  text-align: center;
+  color: #fff;
+}
+.openTimeSection .opentimeBg .opentimeCnt p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  color: #fff;
+}
+.openTimeSection .opentimeBg .opentimeCnt a {
+  margin-top: 50px;
+}
+.openTimeSection .opentimeBg .opentimeCnt .opentimeBtn {
+  background: #fff;
+  color: black;
+}
+.openTimeSection .opentimeBg .opentimeCnt .opentimeBtn:hover {
+  background: #4caf50;
+  color: #fff;
+}
+/* ======= OPEN TIME SECTION END ======= */
+/* ========== FOOTER CSS START =======  */
+footer {
+  padding: 150px 0 75px 0;
+  background: #311f09;
+}
+footer .footerLogo p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #e3e2e0;
+  margin: 35px 0 40px 0;
+}
+footer .footerLogo a {
+  border-radius: 100%;
+  background-color: #ddd5d5;
+  color: #311f09;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+footer .footerLogo a:hover {
+  background-color: #ff8a00;
+  color: #fff;
+}
+footer .page h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 200%;
+  color: #ff8a00;
+  margin-bottom: 25px;
+}
+footer .page a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #e3e2e0;
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+footer .page a:hover {
+  color: #ff8a00;
+}
+footer .information h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 200%;
+  color: #ff8a00;
+  margin-bottom: 25px;
+}
+footer .information a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #e3e2e0;
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+footer .information a:hover {
+  color: #ff8a00;
+}
+footer .getintouch h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 200%;
+  color: #ff8a00;
+  margin-bottom: 25px;
+}
+footer .getintouch p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #e3e2e0;
+  margin-bottom: 15px;
+}
+footer .copyright {
+  padding: 90px 0 0 0;
+}
+footer .copyright p,
+footer .copyright a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #e3e2e0;
+}
+footer .copyright a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+/* ========== FOOTER CSS END =======  */
