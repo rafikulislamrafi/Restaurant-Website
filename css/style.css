@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
+  scroll-behavior: smooth;
 }
 ul,
 ol {
@@ -47,10 +49,27 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+  overflow: hidden;
+  position: relative;
 }
 .btn:hover {
   background: #4caf50;
   color: #fff;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background: #4caf50;
+  transform: skewX(35deg);
+  z-index: -9999;
+  transition: width 0.3s ease;
+}
+.btn:hover::before {
+  width: 150%;
 }
 .btn-primary {
   background-color: #4caf50;
@@ -166,6 +185,7 @@ header .navbar-nav .nav-link.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: visible;
 }
 .heroSection .heroCnt span {
   font-family: var(--third-family);
@@ -228,7 +248,8 @@ header .navbar-nav .nav-link.active {
   background-color: #d8ff04;
   padding: 2vw 0;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 #move .marque {
   flex-shrink: 0;
@@ -254,6 +275,7 @@ header .navbar-nav .nav-link.active {
   justify-content: center;
   align-items: center;
   background: #3fc66e1e;
+  overflow-x: hidden;
 }
 .welcomeSection .welcomeCnt h1 {
   font-family: var(--second-family);
@@ -444,6 +466,7 @@ header .navbar-nav .nav-link.active {
 .reserveSection {
   padding: 85px 0 70px 0;
   background: #fff4e771;
+  overflow-x: visible;
 }
 .reserveSection .reserveCnt {
   padding-left: 40px;
@@ -561,7 +584,11 @@ header .navbar-nav .nav-link.active {
 /* ========== FOOTER CSS START =======  */
 footer {
   padding: 150px 0 75px 0;
-  background: #311f09;
+  /* background: #311f09; */
+  background-image: url(../img/herobg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 footer .footerLogo p {
   font-family: var(--font-family);
